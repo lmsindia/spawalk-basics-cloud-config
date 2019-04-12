@@ -126,7 +126,7 @@ eureka:
 spring:
   profiles: docker
   zipkin:
-    baseUrl: http://zipkinserver:9411/
+    baseUrl: http://localhost:9411/
 
 eureka:
 # Register our microservices to Eureka using hostnames in a Docker environment will not work, they will all get
@@ -135,7 +135,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
