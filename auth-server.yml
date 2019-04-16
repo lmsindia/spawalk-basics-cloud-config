@@ -21,7 +21,7 @@ logging:
 # and token store
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/auth
+    url: jdbc:mysql://cloudia.co.in:3306/auth
     username: root
     password: root
     driver-class: com.mysql.jdbc.Driver
