@@ -1,6 +1,6 @@
 server:
   port: 8082
-  contextPath: /task-service
+  contextPath: /spawalk-admin-service
 
 eureka:
   client:
