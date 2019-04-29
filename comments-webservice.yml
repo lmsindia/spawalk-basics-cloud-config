@@ -44,11 +44,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-# Define the port where the API gateway server would be running. This could always be port 8080
-# since each docker container has it's own IP
-server:
-  port: 8080
-
 # Datasource and JPA configuration to be used for storing the OAuth authorization details
 # and token store
 spring:
@@ -63,4 +58,8 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-  
+      
+# Define the port where the API gateway server would be running. This could always be port 8080
+# since each docker container has it's own IP
+server:
+  port: 8080 
