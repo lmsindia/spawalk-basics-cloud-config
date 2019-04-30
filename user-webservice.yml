@@ -47,13 +47,14 @@ eureka:
 
 spring:
   datasource:
+    driverClassName: com.mysql.jdbc.Driver 
     url: jdbc:mysql://localhost:3306/auth
     username: root
     password: password
-    jpa:
+  jpa:
      hibernate.ddl-auto: update
      generate-ddl: true
-     show-sql: true
+     show-sql: true   
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
 server:
