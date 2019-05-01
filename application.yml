@@ -5,8 +5,8 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/auth
-    username: spawalk
-    password: Spawalk12345*
+    username: root
+    password: password
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     hibernate.ddl-auto: update
