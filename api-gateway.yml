@@ -77,7 +77,6 @@ service-id: user-service
 stripPrefix: false
     user-service:    
       path: /user-service/**
-      url: http://localhost:8080
       stripPrefix: false
       serviceId: user-service
       sensitiveHeaders:
