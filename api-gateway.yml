@@ -71,7 +71,7 @@ zuul:
   routes:
     swagger-service:
       path: /api/v2/**
-      url: http://localhost:8080/
+      url: http://localhost:8081/
       service-id: user-service
       stripPrefix: false 
     user-service:    
