@@ -1,11 +1,15 @@
 server:
   port: 8081
- 
+  contextPath: /spawalk-user-service
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+spring:  
+  application:
+    name: customer-service
 
 spring:
   zipkin:
