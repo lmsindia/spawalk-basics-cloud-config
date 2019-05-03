@@ -44,7 +44,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-
+spring:
+  profiles:
+      Active: prod,swagger
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
 server:
