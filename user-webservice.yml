@@ -2,11 +2,6 @@ server:
   port: 8081
   contextPath: /user-service
 
-springfox:
-    documentation:
-       swagger:
-               v2:
-                  path: /swagger.json
 
 eureka:
   client:
