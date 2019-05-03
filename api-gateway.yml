@@ -67,13 +67,9 @@ server:
 # Spring cloud security would need to secure the api gateway before it can route the
 # requests using zuul
 zuul:
+  prefix: /api
   ignoredServices: '*'
   routes:
-    swagger-service:
-      path: /api/v2/**
-      url: http://localhost:8081/
-      service-id: user-service
-      stripPrefix: false 
     user-service:    
       path: /user-service/**
       url: http://localhost:8081
