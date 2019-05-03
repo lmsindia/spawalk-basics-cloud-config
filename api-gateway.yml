@@ -69,7 +69,12 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    user-service:
+    swagger-service:
+      path: /api/v2/**
+      url: http://localhost:8080/
+      service-id: user-service
+      stripPrefix: false 
+    user-service:    
       path: /user-service/**
       stripPrefix: false
       serviceId: user-webservice
