@@ -69,9 +69,8 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    spawalk-user-service:    
-      path: /spawalk-user-service/**
-      url: http://localhost:8081/spawalk-user-service/
+   user-service:    
+      path: /user-service/**
       stripPrefix: false
       serviceId: user-webservice
       sensitiveHeaders:
