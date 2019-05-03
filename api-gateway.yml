@@ -79,7 +79,7 @@ stripPrefix: false
       path: /user-service/**
       url: http://localhost:8081
       stripPrefix: false
-      serviceId: user-service
+      serviceId: user-webservice
       sensitiveHeaders:
     task-service:
       path: /task-service/**
