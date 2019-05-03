@@ -77,7 +77,7 @@ zuul:
     user-service:    
       path: /user-service/**
       stripPrefix: false
-      serviceId: user-webservice
+      serviceId: user-service
       sensitiveHeaders:
     task-service:
       path: /task-service/**
