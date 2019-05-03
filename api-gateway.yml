@@ -76,6 +76,7 @@ zuul:
       stripPrefix: false 
     user-service:    
       path: /user-service/**
+      url: http://localhost:8081
       stripPrefix: false
       serviceId: user-service
       sensitiveHeaders:
