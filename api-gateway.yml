@@ -69,7 +69,7 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    spawalk-user-service:    
+    user-service:    
       path: /user-service/**
       stripPrefix: false
       serviceId: user-webservice
