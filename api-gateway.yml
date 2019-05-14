@@ -79,6 +79,11 @@ zuul:
       stripPrefix: false
       serviceId: task-webservice
       sensitiveHeaders:
+    comments-webservice:
+      path: /spawalk-merchant-service/**
+      stripPrefix: false
+      serviceId: comments-webservice
+      sensitiveHeaders:
     user:
       path: /userauth/**
       stripPrefix: false
