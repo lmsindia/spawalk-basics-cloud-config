@@ -41,14 +41,14 @@ security:
   user:
     password: none
   oauth2:
-    client:
-    #  accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
-    #  userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
-    #  clientId: acme
-    #  clientSecret: acmesecret
-    #  registered-redirect-uri: http://localhost:8765/login
-    #  pre-established-redirect-uri: http://localhost:8765/login
-      use-current-uri: false
+#    client:
+#      accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
+#      userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
+#      clientId: acme
+#      clientSecret: acmesecret
+#      registered-redirect-uri: http://localhost:8765/login
+#      pre-established-redirect-uri: http://localhost:8765/login
+#      use-current-uri: false
     resource:
       jwt:
         keyValue: |
@@ -69,7 +69,7 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    user-service:    
+    user-service:
       path: /user-service/**
       stripPrefix: false
       serviceId: user-webservice
@@ -84,13 +84,13 @@ zuul:
       stripPrefix: false
       serviceId: auth-server
       sensitiveHeaders:
-      path: /api/loggedinuser/**
-      stripPrefix: true
-      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/
-    ui:
-      path: /**
-      stripPrefix: false
-      serviceId: web-portal
+#      path: /api/loggedinuser/**
+#      stripPrefix: true
+#      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/
+#    ui:
+#      path: /**
+#      stripPrefix: false
+#      serviceId: web-portal
     eureka:
       user-webservice:
         semaphore:
@@ -126,7 +126,7 @@ eureka:
 spring:
   profiles: docker
   zipkin:
-    baseUrl: http://localhost:9411/
+    baseUrl: http://zipkinserver:9411/
 
 eureka:
 # Register our microservices to Eureka using hostnames in a Docker environment will not work, they will all get
@@ -135,7 +135,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eurekaregistry:8761/eureka/
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
@@ -146,4 +146,4 @@ authserver:
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
 server:
-  port: 8765
+port: 8765
