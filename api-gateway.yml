@@ -70,7 +70,7 @@ zuul:
   ignoredServices: '*'
   routes:
     user-webservice:
-      path: /user-service/**
+      path: /spawalk-user-service/**
       stripPrefix: false
       serviceId: user-webservice
       sensitiveHeaders:
