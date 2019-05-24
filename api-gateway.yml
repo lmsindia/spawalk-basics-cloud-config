@@ -74,8 +74,8 @@ zuul:
       stripPrefix: false
       serviceId: user-webservice
       sensitiveHeaders:
-    task-service:
-      path: /task-service/**
+    task-webservice:
+      path: /spawalk-admin-service/**
       stripPrefix: false
       serviceId: task-webservice
       sensitiveHeaders:
