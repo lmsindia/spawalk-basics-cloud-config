@@ -6,7 +6,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://103.21.53.12:3306/auth
     username: root
-    password: password
+    password: Lms@401<hunk
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     hibernate.ddl-auto: update
