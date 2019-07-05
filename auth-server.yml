@@ -21,7 +21,7 @@ logging:
 # and token store
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/auth?autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    url: jdbc:mysql://localhost:3306/spawalk?autoReconnect=true&failOverReadOnly=false&maxReconnects=10
     username: root
     password: Lms@401<hunk
     driver-class: com.mysql.cj.jdbc.Driver
@@ -39,7 +39,7 @@ spring:
 # Datasource and JPA configuration to be used for storing the OAuth authorization details
 # and token store
   datasource:
-    url: jdbc:mysql://mysqldb:3306/auth?autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    url: jdbc:mysql://mysqldb:3306/spawalk?autoReconnect=true&failOverReadOnly=false&maxReconnects=10
     username: root
     password: password
     driver-class: com.mysql.cj.jdbc.Driver
