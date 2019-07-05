@@ -84,6 +84,11 @@ zuul:
       stripPrefix: false
       serviceId: comments-webservice
       sensitiveHeaders:
+    payment-webservice:
+      path: /spawalk-payment-service/**
+      stripPrefix: false
+      serviceId: payment-webservice
+      sensitiveHeaders:
     user:
       path: /userauth/**
       stripPrefix: false
