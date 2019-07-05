@@ -4,7 +4,7 @@ mail:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://103.21.53.12:3306/auth
+    url: jdbc:mysql://103.21.53.12:3306/spawalk
     username: root
     password: Lms@401<hunk
   jpa:
