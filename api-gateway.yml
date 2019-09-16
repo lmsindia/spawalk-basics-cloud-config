@@ -58,6 +58,12 @@ security:
 # Define the port where the API gateway server would be running
 server:
   port: 8765
+  ssl:
+    enabled: true
+    key-alias: spawalk
+    key-store-password: spa@401hunk
+    key-store: /root/SPAWALK_WORKSPACES-MAY-QA/spawalkqa/spwalk-backend/spawalk_ssl.pkcs12
+    key-store-type: PKCS12
 
 # Define the routes which determine what URL are serviced by what applications.
 # The application/services are defined in the bootstrap.yml file of individual applications
@@ -153,13 +159,5 @@ authserver:
     port: 8899
     contextPath: userauth
 
-# Define the port where the API gateway server would be running. This could always be port 8080
-# since each docker container has it's own IP
-server:
-  ssl:
-    enabled: true
-    key-alias: spawalk
-    key-store-password: spa@401hunk
-    key-store: /root/SPAWALK_WORKSPACES-MAY-QA/spawalkqa/spwalk-backend/spawalk_ssl.pkcs12
-    key-store-type: PKCS12
+
 
