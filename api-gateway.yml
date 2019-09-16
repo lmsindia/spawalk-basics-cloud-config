@@ -65,6 +65,13 @@ server:
     key-store: /root/SPAWALK_WORKSPACES-MAY-QA/spawalkqa/spwalk-backend/spawalk_ssl.pkcs12
     key-store-type: PKCS12
 
+spring:
+  cloud:
+    gateway:
+      httpclient:
+        ssl:
+          useInsecureTrustManager: true    
+
 # Define the routes which determine what URL are serviced by what applications.
 # The application/services are defined in the bootstrap.yml file of individual applications
 # using the spring.application.name property.
