@@ -158,6 +158,7 @@ authserver:
 server:
   ssl:
     enabled: true
+    key-alias: spawalk
     key-store-password: spa@401hunk
     key-store: /root/SPAWALK_WORKSPACES-MAY-QA/spawalkqa/spwalk-backend/spawalk_ssl.pkcs12
     key-store-type: PKCS12
