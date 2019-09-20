@@ -23,9 +23,18 @@ notification:
       
 
 
-# SMS Keys
+# SMS Keys MSG91
 sms:
   auth-key: 275903AM8R9RlOaa5cd42b46
   sender-id: SpaWak
   route: 4
   main-url: http://api.msg91.com/api/sendhttp.php?
+
+# Email Config
+email:
+  from-mail: admin@spawalk.com
+  password: spa@401hunk
+  host: smtp.gmail.com
+  port: 465
+  auth: true
+  start-tls-enable: true
