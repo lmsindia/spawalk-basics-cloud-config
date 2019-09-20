@@ -31,10 +31,10 @@ sms:
   main-url: http://api.msg91.com/api/sendhttp.php?
 
 # Email Config
-mail:
-    host: smtp.gmail.com
-    port: 465
-    username: admin@spawalk.com
-    password: spa@401hunk
-  
+emailKey:
+    host-name: smtp.gmail.com
+    port-no: 465
+    from-mail: admin@spawalk.com
+    pass: spa@401hunk
+    auth: true
   
