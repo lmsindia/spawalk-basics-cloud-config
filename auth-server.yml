@@ -36,19 +36,7 @@ spring:
 
 spring:
   profiles: docker
-# Datasource and JPA configuration to be used for storing the OAuth authorization details
-# and token store
-  datasource:
-    url: jdbc:mysql://mysqldb:3306/spawalk?autoReconnect=true&failOverReadOnly=false&maxReconnects=10
-    username: root
-    password: password
-    driver-class: com.mysql.cj.jdbc.Driver
 
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: false
-    hibernate:
-      ddl-auto: update
 eureka:
 # Register our microservices to Eureka using hostnames in a Docker environment will not work, they will all get
 # one and the same hostname. Instead we configure them to use its IP address during registration with Eureka.
