@@ -37,4 +37,4 @@ email:
   host: smtp.gmail.com
   port: 465
   auth: true
-  start-tls-enable: true
+  
