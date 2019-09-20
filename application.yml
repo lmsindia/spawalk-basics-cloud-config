@@ -31,8 +31,7 @@ sms:
   main-url: http://api.msg91.com/api/sendhttp.php?
 
 # Email Config
-spring:
-  mail:
+mail:
     host: smtp.gmail.com
     port: 465
     username: admin@spawalk.com
