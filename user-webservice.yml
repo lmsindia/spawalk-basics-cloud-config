@@ -57,7 +57,8 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     hibernate.ddl-auto: update
     generate-ddl: true
-    show-sql: true
+    show-sql: false
+    packages-to-scan : com.spawalk
 
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
