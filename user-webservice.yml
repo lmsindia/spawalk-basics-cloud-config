@@ -45,7 +45,19 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
+      
+      
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://103.21.53.12:3306/spawalk
+    username: root
+    password: Lms@401<hunk
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
 
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
