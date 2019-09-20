@@ -48,12 +48,6 @@ eureka:
      
 
 
-# Notification FCM 
-notification:
-    auth-key : AAAA_m3sceU:APA91bF5ZqwAwWZCjd__i0CtVcfucast_o3ayt_rlHzHiBTeMtuvA3geHAySeHsjX9QFrXE86avdn1S24yLVmkU5OH3ZDAvu_Ve5VTLA5OIzXB__ADyLyi14QnB96p3GZt8RAviJSjPz
-    fmc-url : https://fcm.googleapis.com/fcm/send
-      
-
 
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
