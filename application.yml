@@ -18,6 +18,6 @@ spring:
 
 # Notification FCM 
 notification:
-    auth-key : AAAA_m3sceU:APA91bF5ZqwAwWZCjd__i0CtVcfucast_o3ayt_rlHzHiBTeMtuvA3geHAySeHsjX9QFrXE86avdn1S24yLVmkU5OH3ZDAvu_Ve5VTLA5OIzXB__ADyLyi14QnB96p3GZt8RAviJSjPz
-    fmc-url : https://fcm.googleapis.com/fcm/send
+       auth-key: AAAA_m3sceU:APA91bF5ZqwAwWZCjd__i0CtVcfucast_o3ayt_rlHzHiBTeMtuvA3geHAySeHsjX9QFrXE86avdn1S24yLVmkU5OH3ZDAvu_Ve5VTLA5OIzXB__ADyLyi14QnB96p3GZt8RAviJSjPz
+       fmc-url: https://fcm.googleapis.com/fcm/send
       
